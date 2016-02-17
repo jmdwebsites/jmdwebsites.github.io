@@ -1,0 +1,98 @@
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Basic Website Experiment</title>
+  <meta name="author" content="jmdwebsites">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+ 
+<style type="text/css">
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
+.container2 {
+  background-color: green;
+  margin: 0 auto;
+  min-height: 100%; /* Set to minimum height so overflow doesn't get hidden */
+  overflow-y: hidden; /* HIDE overflow; I know, it doesn't make much sense */
+  position: relative;
+  width: 960px;
+  overflow: hidden;
+}
+
+body {
+  background: #FFEEBB;
+  margin: 0px 0px;
+}
+
+container {
+  height: 100px;
+}
+
+.green-box {
+  background-color: #00EE00;
+  padding:20px;
+  width: 960px;
+  margin: 0 auto;
+  height: 300px;
+  overflow: hidden;
+}
+
+.red-box {
+  background-color: red;
+  width: 400px;
+  min-height: 200px;
+  float: left;
+}
+
+.white-box {
+  background-color: #FFFFFF;
+  width: 960px;
+  margin: 0 auto;
+  height: 400px;
+}
+
+.footer {
+  background-color: #AAAAAA;
+}
+
+
+</style>
+</head>
+
+
+<body>
+Body Text right at top.
+
+<div class="container">
+Container
+
+<div class="green-box">
+  Green Box Text
+  <div class="red-box">
+    <h2>Floating Red Box Text</h2>
+    <p>1</p><p>2</p><p>3</p><p>4</p><p>5</p><p>6</p><p>7</p><p>8</p><p>9</p>
+  </div>
+</div>
+
+<div class="white-box">
+  White Box Text
+</div>
+
+<div class="footer">
+  Grey Box Text
+</div>
+
+End Continer
+</div>
+</body>
+</html>
