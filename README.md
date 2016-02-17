@@ -7,7 +7,7 @@ Create a site directory and add this README.md to it. Then initialize the git re
 Set the user name and email just for this repository
 
 	git config user.name "jmdwebsites"
-	git config user.email jmdwebsites@gmail.com
+	git config user.email me@example.com
 
 Now,do the first commit
 
