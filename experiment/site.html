@@ -12,22 +12,26 @@ html {
 }
 body {
   background: yellow;
-  margin: 0px;
+  margin-top: 10px;
   min-height: 100px;
+  padding: 0;
+  border: 0;
 }
-header {
+.header {
   background: #7777FF;
-  margin: 10px;
+  margin: 10px 10px;
   min-height: 80px;
-  overflow: hidden;
+  padding: 0;
+  border: 0;
+  overflow-y: hidden;
 }
-nav {
+.nav {
   background: lightgrey;
   margin: 10px;
   min-height: 40px;
-  overflow: hidden;
+  overflow-y: hidden;
 }
-nav a {
+.nav a {
   background: #444444;
   text-decoration: none;
   color: #D2D2D2;
@@ -36,17 +40,17 @@ nav a {
   display: block;
   float: left;
 }
-nav div a {
+.nav div a {
   float: right;
 }
-nav a.active {
+.nav a.active {
   background: #000000;
   color: white;
 }
-nav a:hover {
+.nav a:hover {
   color: white;
 }
-nav a:active {
+.nav a:active {
   color: white;
 }
 .main {
@@ -61,6 +65,7 @@ nav a:active {
   position: relative;
 }
 footer {
+  display: block;
   background: #7777FF;
   margin: 10px;
   min-height: 80px;
@@ -70,27 +75,36 @@ footer {
    height: 1px;
    margin-top: -1px;
  }
+header {
+  display: block;
+}
 </style>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     PARENT Text Start.
     PARENT Text End.
   </header>
 
   <nav>
-    <a href="" class="active">Home</a>
-    <a href="">About Me</a>
-    <a href="">Services</a>
-    <a href="">Contact</a>
+  <div class="nav">
     <div>
       <a href="">Login</a>
       <a href="">Sign Up</a>
     </div>
+    <a href="" class="active">Home</a>
+    <a href="">About Me</a>
+    <a href="">Services</a>
+    <a href="">Contact</a>
+    <a href="">Contact</a>
+    <a href="">Contact</a>
+    <a href="">Contact</a>
+    <a href="">Contact</a>
+  </div>
   </nav>
 
-  <div class="clear"></div>
+  <div class="clear2"></div>
 
   <div class="main">
       CHILD Text Start.
