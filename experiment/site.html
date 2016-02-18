@@ -75,6 +75,18 @@ footer {
    height: 1px;
    margin-top: -1px;
  }
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* ie 6/7 */
+}
+
 header {
   display: block;
 }
@@ -88,7 +100,7 @@ header {
   </header>
 
   <nav>
-  <div class="nav">
+  <div class="nav clearfix">
     <div>
       <a href="">Login</a>
       <a href="">Sign Up</a>
