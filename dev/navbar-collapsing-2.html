@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+  <title>menu mockup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+
+.nav {
+	position: relative;
+	margin: 20px 0;
+  background: #00FF00;
+}
+.nav ul {
+	margin: 0;
+	padding: 0;
+}
+.nav li {
+	margin: 0 5px 10px 0;
+	padding: 0;
+	list-style: none;
+	display: inline-block;
+}
+.nav .current {
+    display: none; /* hide current <li> item */
+    margin: 0;
+}	
+.nav a {
+	padding: 3px 12px;
+	text-decoration: none;
+	color: #999;
+	line-height: 100%;
+}
+.nav a:hover {
+	color: #000;
+}
+.nav .current a {
+	background: #999;
+	color: yellow;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+	.nav {
+		position: relative;
+        background: #00FFFF;
+	}	
+    .nav li {
+        display: none; /* hide all <li> items */
+        margin: 0;
+	}	
+    .nav li.current {
+        display: block; /* show only current <li> item */
+    }
+    .nav a {
+		display: block;
+    }
+    .nav ul:hover li {
+		display: block;
+	}
+}
+  </style>
+</head>
+<body>
+<nav class="nav">
+	<ul>
+		<li class="current"><a href="#">Menu</a></li>
+		<li><a href="#">Illustration</a></li>
+		<li><a href="#">Web Design</a></li>
+		<li><a href="#">Print Media</a></li>
+		<li><a href="#">Graphic Design</a></li>
+	</ul>
+</nav>
+</body>
+</html>
